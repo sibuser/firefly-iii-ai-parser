@@ -71,7 +71,7 @@ Extraction rules
     10. Notes
     •   Keep notes field empty unless there is specific additional info to add.
     11. category_name
-    •   Choose the most specific category possible from the given list below.
+    •   Choose the most specific category possible from the given list below for each item.
     •   If unsure, leave empty.
 
 
