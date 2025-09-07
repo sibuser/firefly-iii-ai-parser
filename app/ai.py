@@ -66,9 +66,9 @@ Extraction rules
 	8.	Output constraints
     •	Return only valid JSON exactly matching the structure above.
     •	Do not include reasoning, comments, or extra fields.
-    9.    source_name
+    9.  source_name
     •	DO NOT MODIFY source_name
-    10.  Notes
+    10. Notes
     •   Keep notes field empty unless there is specific additional info to add.
     11. category_name
     •   Choose the most specific category possible from the given list below.
