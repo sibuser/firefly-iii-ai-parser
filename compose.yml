@@ -1,0 +1,16 @@
+services:
+  firefly-bot:
+    build: .
+    container_name: firefly-receipt-bot
+    environment:
+      OPENAI_API_KEY: ${OPENAI_API_KEY}
+      FIREFLY_BASE_URL: ${FIREFLY_BASE_URL}
+      FIREFLY_TOKEN: ${FIREFLY_TOKEN}
+      BOT_TOKEN: ${BOT_TOKEN}
+      FIREFLY_ENABLED: 1
+      LOG_LEVEL: ${LOG_LEVEL:-"INFO"}
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "5"

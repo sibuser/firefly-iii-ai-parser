@@ -1,0 +1,20 @@
+[project]
+name = "firefly-iii-parser"
+version = "0.1.0"
+description = "Firefly III Receipt Parser Bot"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "numpy>=2.0.2",
+    "openai>=1.106.1",
+    "opencv-python>=4.11.0.86",
+    "pandas>=2.3.2",
+    "pillow>=11.3.0",
+    "pymupdf>=1.26.4",
+    "pytelegrambotapi>=4.29.1",
+    "python-dotenv>=1.1.1",
+    "requests>=2.32.5",
+    "ruff>=0.12.12",
+    "structlog>=25.4.0",
+    "structlog-pretty>=0.4.3",
+]
