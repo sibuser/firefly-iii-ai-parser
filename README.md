@@ -1,5 +1,7 @@
 A Telegram Bot for parsing receipts and uploading purchased items to Firefly III.
 
+This is just a prototype and a proof of concept. Use at your own risk.
+
 ## Requirements
 
 Open AI API key.
@@ -16,3 +18,5 @@ export FIREFLY_BASE_URL=http://app:8080
 export FIREFLY_TOKEN=
 export BOT_TOKEN=
 ```
+
+Licensed under the MIT License.
