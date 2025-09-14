@@ -89,6 +89,8 @@ Do not include any markdown formatting.
 NEVER ADD ```json ``` into the response
 RETURN ALL ITEMS FROM THE RECEIPT
 DO NOT ADD ITEMS WITH ZERO AMOUNT
+ENSURE EVERY TRANSACTION HAS A NON-EMPTY DATE
+DO NOT INCLUDE TOTALS, Purchase, VAT/MOMS, PAYMENT LINES, OR HEADERS AS ITEMS or withdrawal
 """
 
 def image_to_data_url(path: Path) -> str:
