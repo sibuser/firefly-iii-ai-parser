@@ -19,4 +19,10 @@ export FIREFLY_TOKEN=
 export BOT_TOKEN=
 ```
 
+# How to run
+
+```bash
+python main.py receipt.jpg --firefly
+
 Licensed under the MIT License.
+```
