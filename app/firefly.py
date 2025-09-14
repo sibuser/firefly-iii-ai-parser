@@ -32,7 +32,7 @@ def send_to_firefly(payload: Dict) -> Dict:
         log.error("firefly_tx_error", status=r.status_code, body=r.text)
         raise RuntimeError(f"Firefly transaction error: {r.status_code} {r.text}")
     data = r.json()
-    log.info("firefly_tx_success", transactions=len(data.get("data", [])))
+    log.debug("firefly_tx_success", transactions=len(data.get("data", [])))
     return data
 
 def get_accounts(account_type: str) -> Dict:
@@ -123,7 +123,7 @@ def create_and_attach(
         attachment_id, upload_url = create_attachment_for_journal(jid, filename, filename, notes)
         if upload_url:
             upload_attachment_bytes(upload_url, receipt_path)
-            log.info("receipt_attached", journal_id=jid, attachment_id=attachment_id)
+            log.debug("receipt_attached", journal_id=jid, attachment_id=attachment_id)
         else:
             log.error("no_upload_url", journal_id=jid, attachment_id=attachment_id)
 
@@ -152,7 +152,7 @@ def create_and_attach(payload: Dict, receipt_path: str, notes: str = "") -> Dict
         )
         if upload_url:
             upload_attachment_bytes(upload_url, receipt_path)
-            log.info("receipt_attached", journal_id=jid, attachment_id=attachment_id)
+            log.debug("receipt_attached", journal_id=jid, attachment_id=attachment_id)
         else:
             log.error("no_upload_url", journal_id=jid, attachment_id=attachment_id)
 
