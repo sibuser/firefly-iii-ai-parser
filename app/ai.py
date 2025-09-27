@@ -55,6 +55,7 @@ Extraction rules
 	4.	currency
     •	If the receipt shows SEK/kr, set "currency_code": "SEK" and "currency_id": "10".
     •	If currency is unknown, still set "currency_code": "SEK" and "currency_id": "10" (default for Swedish receipts).
+        If currency not SEK set "currency_code": "SEK" and "currency_id": "10", convert to SEK using google currency exchange rate and add in notes amount with currency code of the transaction.
 	5.	destination_name (merchant)
     •.  First check if a store/merchant name exists in the given list below. If it does, use that exact name.
     •   If not, use the store/merchant name exactly as printed (e.g., BAUHAUS or Bauhaus Askim).
@@ -73,6 +74,7 @@ Extraction rules
     11. category_name
     •   Choose the most specific category possible from the given list below for each item.
     •   If unsure, leave empty.
+
 
 
 Worked example (for internal reasoning, do not include in output)
